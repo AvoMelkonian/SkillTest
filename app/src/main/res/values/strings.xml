@@ -1,3 +1,25 @@
 <resources>
-    <string name="app_name">Skill Test</string>
+    <string name="app_name">skill_test</string>
+
+    //signup
+    <string name="txt_ask_name">What is your name?</string>
+    <string name="hint_name">Name</string>
+    <string name="btntxt_signup">Let\'s start!</string>
+
+    //main
+    <string name="option1">option1</string>
+    <string name="option2">option1</string>
+    <string name="option3">option1</string>
+    <string name="option4">option1</string>
+
+    //quiz
+    <string name="txt_question">Question placeholderplaceholderplaceholdplaceholder placeholdererplaceholder?</string>
+    <string name="btntxt_choice1">choice 1</string>
+    <string name="btntxt_choice2">choice 2</string>
+    <string name="btntxt_choice3">choice 3</string>
+    <string name="btntxt_choice4">choice 4</string>
+    <string name="btntxt_previous">Previous</string>
+    <string name="btntxt_next">Next</string>
+    <string name="btntxt_end">Results</string>
+    <string name="txtView_name">What\'s your name?</string>
 </resources>
