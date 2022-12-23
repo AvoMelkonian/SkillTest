@@ -4,98 +4,64 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/blue_default"
+    android:background="@drawable/gradient_drawable"
     tools:context=".activity_main">
 
-    <Spinner
-        android:id="@+id/sp_theme"
-        android:layout_width="120dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginBottom="39dp"
-        android:background="@color/gold"
-        android:dropDownSelector="@color/black"
-        android:popupBackground="@color/gold"
-        android:spinnerMode="dropdown"
-        app:layout_constraintBottom_toTopOf="@+id/img_logo"
-        app:layout_constraintEnd_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="SpeakableTextPresentCheck" />
-
     <ImageView
-        android:id="@+id/img_logo"
+        android:id="@+id/menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@id/barrier"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_menu_24" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="menu"
+        tools:layout_editor_absoluteY="40dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="120dp"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:scrollbars="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3">
+
+    </androidx.recyclerview.widget.RecyclerView>
+    <LinearLayout
+        android:id="@+id/eer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@id/guideline3"
         app:layout_constraintEnd_toEndOf="@+id/guideline"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logo"
-        tools:ignore="ImageContrastCheck" />
-
-    <Button
-        android:id="@+id/btn_one"
-        android:layout_width="0dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginEnd="4dp"
-        android:backgroundTint="@color/gold"
-        android:text="Button"
-        android:textColor="@color/black"
-        app:layout_constraintBottom_toTopOf="@+id/btn_three"
-        app:layout_constraintEnd_toStartOf="@+id/btn_two"
-        app:layout_constraintHorizontal_chainStyle="spread_inside"
-        app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toBottomOf="@+id/guideline3"
-        tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck" />
-
-    <Button
-        android:id="@+id/btn_two"
-        android:layout_width="0dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginEnd="4dp"
-        android:backgroundTint="@color/gold"
-        android:text="Button"
-        android:textColor="@color/black"
-        app:layout_constraintBottom_toTopOf="@id/btn_four"
-        app:layout_constraintEnd_toStartOf="@+id/guideline"
-        app:layout_constraintStart_toEndOf="@+id/btn_one"
-        app:layout_constraintTop_toTopOf="@+id/guideline3"
-        tools:ignore="TextContrastCheck" />
-
-    <Button
-        android:id="@+id/btn_three"
-        android:layout_width="0dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginEnd="4dp"
-        android:backgroundTint="@color/gold"
-        android:text="Button"
-        android:textColor="@color/black"
-        app:layout_constraintBottom_toTopOf="@+id/guideline4"
-        app:layout_constraintEnd_toStartOf="@id/btn_four"
-        app:layout_constraintHorizontal_chainStyle="spread_inside"
-        app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toBottomOf="@+id/btn_one"
-        tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck" />
-
-    <Button
-        android:id="@+id/btn_four"
-        android:layout_width="0dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginEnd="4dp"
-        android:backgroundTint="@color/gold"
-        android:text="Button"
-        android:textColor="@color/black"
-        app:layout_constraintBottom_toTopOf="@+id/guideline4"
-        app:layout_constraintEnd_toStartOf="@+id/guideline"
-        app:layout_constraintStart_toEndOf="@id/btn_three"
-        app:layout_constraintTop_toBottomOf="@+id/btn_two"
-        tools:ignore="TextContrastCheck" />
+        app:layout_constraintTop_toBottomOf="@id/barrier"
+        app:srcCompat="@drawable/logo" />
 
 
     <androidx.constraintlayout.widget.Guideline
@@ -103,27 +69,30 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.9" />
+        app:layout_constraintGuide_percent="0.85"/>
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.1" />
+        app:layout_constraintGuide_percent="0.15" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="439dp" />
+        app:layout_constraintGuide_percent="0.60" />
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline4"
+    <androidx.constraintlayout.widget.Barrier
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.85" />
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="menu"
+        tools:layout_editor_absoluteX="288dp"
+        tools:layout_editor_absoluteY="40dp" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
