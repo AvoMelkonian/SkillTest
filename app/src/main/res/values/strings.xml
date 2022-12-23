@@ -26,5 +26,29 @@
     <string name="btntxt_previous">Previous</string>
     <string name="btntxt_next">Next</string>
     <string name="btntxt_end">Results</string>
+
+    //result
+    <string name="txt_results">Results</string>
+    <string name="btntxt_affirmative">Okay</string>
+
+    //customize
+    <string name="txt_custom">Customize</string>
+    <string name="txt_theme">Theme</string>
+    <string name="txt_default_theme">Default</string>
+    <string name="txt_light_theme">Light</string>
+    <string name="txt_dark_theme">Dark</string>
+    <string name="txt_sound_eff">Sound Effects</string>
+
     <string name="txtView_name">What\'s your name?</string>
+    <string name="title_activity_customize">activity_customize</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_results">activity_results</string>
+    <string name="title_activity_result">result</string>
 </resources>
