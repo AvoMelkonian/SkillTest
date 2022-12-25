@@ -64,7 +64,8 @@ public class activity_main extends AppCompatActivity {
 
         @Override
         public void onBindViewHolder(@NonNull RvHolder holder, int position) {
-            holder.qTitle.setText((CharSequence) data.get(position));
+            holder.qTitle.setText( data.get(position).getTitle());
+            holder.qDesc.setText( data.get(position).getDesc());
         }
 
         class RvHolder extends RecyclerView.ViewHolder{
@@ -85,6 +86,14 @@ public class activity_main extends AppCompatActivity {
         QuizInfo(String title,  String desc ){
             this.title = title;
             this.desc =desc;
+        }
+
+        public String getTitle(){
+            return title;
+        }
+
+        public String getDesc() {
+            return desc;
         }
     }
 
