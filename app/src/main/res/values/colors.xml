@@ -2,13 +2,15 @@
 <resources>
     <color name="btn_primary">#A08E5A</color>
     <color name="btn_default">#126da2</color>
-    <color name="btn_default2">#223759</color>
+    <color name="dark_blue">#223759</color>
 
     <color name="gold">#A08E5A</color>
     <color name="black">#FF000000</color>
+    <color name="black2">#FF1F1F1F</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="white2">#d2d2FF</color>
+    <color name="white2">#FFF2F2</color>
     <color name="blue_default">#01579b</color>
     <color name="blue_700">#4f83cc</color>
     <color name="blue_600">#002f6c</color>
+    <color name="metal_black">#2B323B</color>
 </resources>

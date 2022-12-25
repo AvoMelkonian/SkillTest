@@ -2,15 +2,37 @@
     <!-- Base application theme. -->
     <style name="Theme.SkillTest" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/blue_default</item>
+        <item name="colorPrimary">@color/gold</item>
         <item name="colorPrimaryVariant">@color/gold</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
-        <item name="colorOnSecondary">@color/black</item>
+        <item name="colorOnSecondary">@color/dark_blue</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- background color. -->
+        <item name="android:windowBackground">@drawable/gradient_drawable</item>
+        <!-- texts color. -->
+        <item name="android:textColor">@color/white2</item>
+        <item name="android:textColorHint">@color/black2</item>
+        <!-- font.... later -->
         <!-- Customize your theme here. -->
 
+    </style>
+
+    <style name="Theme.Light" parent="Theme.SkillTest">
+        <!-- Primary brand color. -->
+        <!-- Secondary brand color. -->
+        <!-- Status bar color. -->
+        <!-- background color. -->
+        <item name="android:windowBackground">@color/white2</item>
+    </style>
+
+    <style name="Theme.Dark" parent="Theme.SkillTest">
+        <!-- Primary brand color. -->
+        <!-- Secondary brand color. -->
+        <!-- Status bar color. -->
+        <!-- background color. -->
+        <item name="android:windowBackground">@color/metal_black</item>
     </style>
 
     <style name="Theme.SkillTest.NoActionBar">

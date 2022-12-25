@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient_drawable"
     tools:context=".activity_customize">
 
     <ImageView
@@ -41,7 +40,6 @@
         android:maxLines="2"
         android:text="@string/txt_custom"
         android:textAlignment="center"
-        android:textColor="@color/white"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
         app:layout_constraintEnd_toStartOf="@+id/guideline_v_right"
@@ -72,7 +70,6 @@
             android:maxLines="2"
             android:text="@string/txt_theme"
             android:textAlignment="textStart"
-            android:textColor="@color/white"
             android:textSize="16sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/radioGroup"
@@ -97,37 +94,38 @@
                 android:id="@+id/opt_default_theme"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/button"
+                android:layout_margin="8dp"
+                android:background="@drawable/radio_btn_theme"
                 android:button="@null"
+                android:minWidth="64dp"
                 android:padding="8dp"
                 android:text="@string/txt_default_theme"
-                android:textAlignment="center"
-                android:textColor="@color/white2"
-                android:layout_margin="8dp"/>
+                android:textAlignment="center"/>
 
             <RadioButton
                 android:id="@+id/opt_light_theme"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/button"
+                android:layout_margin="8dp"
+                android:background="@drawable/radio_btn_theme"
                 android:button="@null"
+                android:minWidth="64dp"
                 android:padding="8dp"
                 android:text="@string/txt_light_theme"
-                android:textAlignment="center"
-                android:textColor="@color/white2"
-                android:layout_margin="8dp"/>
+                android:textAlignment="center"/>
 
             <RadioButton
                 android:id="@+id/opt_dark_theme"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/button"
+                android:layout_margin="8dp"
+                android:background="@drawable/radio_btn_theme"
                 android:button="@null"
+                android:minWidth="64dp"
                 android:padding="8dp"
                 android:text="@string/txt_dark_theme"
                 android:textAlignment="center"
-                android:textColor="@color/white2"
-                android:layout_margin="8dp"/>
+                app:useMaterialThemeColors="false" />
 
         </RadioGroup>
 
@@ -140,7 +138,6 @@
         android:layout_height="wrap_content"
         android:text="@string/txt_sound_eff"
         android:textSize="16dp"
-        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="@id/guideline_h_mid"
         app:layout_constraintEnd_toStartOf="@+id/guideline_v_right"
         app:layout_constraintHorizontal_bias="0"
@@ -150,11 +147,11 @@
     <Switch
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toEndOf="@id/txt_sound_eff"
-        app:layout_constraintTop_toBottomOf="@id/constraintLayout2"
         app:layout_constraintBottom_toTopOf="@id/guideline_h_mid"
         app:layout_constraintEnd_toStartOf="@id/guideline_v_right"
-        app:layout_constraintHorizontal_bias="1"/>
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintStart_toEndOf="@id/txt_sound_eff"
+        app:layout_constraintTop_toBottomOf="@id/constraintLayout2" />
 
     <androidx.constraintlayout.widget.Barrier
         android:id="@+id/barrier"

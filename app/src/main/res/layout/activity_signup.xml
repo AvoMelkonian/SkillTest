@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/blue_default"
     tools:context=".activity_signup">
 
     <TextView
@@ -13,7 +12,6 @@
         android:layout_height="82dp"
         android:text="@string/txtView_name"
         android:textAlignment="center"
-        android:textColor="@color/white"
         android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline7"
         app:layout_constraintEnd_toStartOf="@+id/guideline6"
@@ -36,8 +34,6 @@
             android:layout_height="wrap_content"
             android:backgroundTint="@color/white"
             android:hint="@string/hint_name"
-            android:textColor="@color/black"
-            android:textColorHint="#616161"
             tools:ignore="TextContrastCheck" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -45,9 +41,7 @@
         android:id="@+id/btn_signup"
         android:layout_width="0dp"
         android:layout_height="55dp"
-        android:backgroundTint="@color/gold"
         android:text="@string/btntxt_signup"
-        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="@id/guideline8"
         app:layout_constraintEnd_toEndOf="@id/guideline6"
         app:layout_constraintHorizontal_bias="1.0"
