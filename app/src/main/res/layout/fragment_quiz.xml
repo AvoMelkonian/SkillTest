@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuizFragment">
+
+    <TextView
+        android:id="@+id/txt_counter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_counter" />
+
+    <TextView
+        android:id="@+id/txt_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="37dp"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:text="@string/txt_question"
+        android:textSize="14sp" />
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="85dp">
+
+        <RadioButton
+            android:id="@+id/rbtn_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="RadioButton"
+            android:textSize="15sp"
+            tools:ignore="DuplicateSpeakableTextCheck,HardcodedText" />
+
+        <RadioButton
+            android:id="@+id/rbtn_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="RadioButton"
+            android:textSize="15sp"
+            tools:ignore="HardcodedText" />
+
+        <RadioButton
+            android:id="@+id/rbtn_three"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="RadioButton"
+            android:textSize="15sp"
+            tools:ignore="HardcodedText" />
+
+        <RadioButton
+            android:id="@+id/rbtn_four"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="RadioButton"
+            android:textSize="15sp"
+            tools:ignore="HardcodedText" />
+    </RadioGroup>
+
+</FrameLayout>

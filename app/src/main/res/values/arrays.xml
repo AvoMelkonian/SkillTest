@@ -1,0 +1,39 @@
+<resources>
+
+    <string-array name="backgroundchoices">
+        <item>@string/background_darkblue</item>
+        <item>@string/background_lightblue</item>
+        <item>@string/background_smokeygrey</item>
+    </string-array>
+
+    <string-array name="backgroundvalues">
+        <item>darkblue_gradient</item>
+        <item>lightblue_gradient</item>
+        <item>smokeygray_gradient</item>
+    </string-array>
+
+    <string-array name="buttonchoices">
+        <item>@string/btn_darkblue</item>
+        <item>@string/btn_bronzegold</item>
+        <item>@string/btn_darkgrey</item>
+    </string-array>
+
+    <string-array name="buttonvalues">
+        <item>darkblue</item>
+        <item>bronzegold</item>
+        <item>darkgrey</item>
+    </string-array>
+
+    <string-array name="questionanswerchoices">
+        <item>@string/txt_lightgrey</item>
+        <item>@string/txt_bronzegold</item>
+        <item>@string/txt_charblack</item>
+    </string-array>
+
+    <string-array name="questionanswervalues">
+        <item>lightgrey</item>
+        <item>bronzegold</item>
+        <item>charblack</item>
+    </string-array>
+
+</resources>
