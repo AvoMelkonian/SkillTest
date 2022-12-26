@@ -19,13 +19,8 @@
     <string name="btntxt_next">Next</string>
     <string name="btntxt_end">Results</string>
 
-
     // result
     <string name="txt_results">Results</string>
-
-    // customize
-    <string name="txt_custom">Customize</string>
-    <string name="txt_theme">Theme</string>
 
     <string name="btnsubmit_txt">Submit</string>
     <string name="txt_choose">Please choose a quiz from the following</string>
