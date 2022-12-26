@@ -47,6 +47,7 @@ public class Signup extends AppCompatActivity {
         ConstraintLayout constraintLayout = findViewById(R.id.signupContainer);
 
         SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
+        SharedPreferences username = getSharedPreferences("my_prefs", MODE_PRIVATE);
         String bgColor = sharedPreferences.getString("background_color", "darkblue_gradient");
         String btnColor = sharedPreferences.getString("button_color", "darkblue");
         SharedPreferences.Editor editor = sharedPreferences.edit();
@@ -81,7 +82,7 @@ public class Signup extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Get user input name and bind to Name variable with removing white spaces
-                name = Objects.requireNonNull(txt_name.getText()).toString();
+                name = txt_name.getText().toString();
                 name = name.replaceAll("^\\s+|\\s+$", "");
 
                 // Check if user name input is empty
@@ -95,7 +96,7 @@ public class Signup extends AppCompatActivity {
                     error.show();
                 } else {
                     // Creating an Editor object to edit(write to the file)
-                    SharedPreferences.Editor myEdit = sharedPreferences.edit();
+                    SharedPreferences.Editor myEdit = username.edit();
 
                     // Storing the key and its value
                     myEdit.putString("name", txt_name.getText().toString());

@@ -122,7 +122,7 @@ public class Page5 extends Fragment {
             public void onClick(View v) {
 
                 SharedPreferences sharedPreferences = getActivity().getSharedPreferences(
-                        "prefs", Context.MODE_PRIVATE);
+                        "my_prefs", Context.MODE_PRIVATE);
                 String username = sharedPreferences.getString("name", "user");
 
                 ViewPagerAdapter.totalScore = 0;
