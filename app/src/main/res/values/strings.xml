@@ -39,7 +39,6 @@
     <string name="background_darkblue">Dark Blue</string>
     <string name="background_lightblue">Light Blue</string>
     <string name="background_smokeygrey">Smokey Gray</string>
-    <string name="title_activity_preferences">PreferencesActivity</string>
 
     <!-- Preference Titles -->
     <string name="title_header">Settings</string>
@@ -48,9 +47,5 @@
     <string name="title_button">Button Color</string>
     <string name="title_text">Text Color</string>
     <string name="title_activity_settings">Settings</string>
-
-    <!-- Messages Preferences -->
-    <string name="signature_title">Your signature</string>
-    <string name="reply_title">Default reply action</string>
 
 </resources>
