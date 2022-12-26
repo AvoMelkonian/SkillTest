@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bronzegold">#A08E5A</color>
+    <color name="blue_1">#126da2</color>
+    <color name="darkblue">#223759</color>
+    <color name="lightblue">#42AAE7</color>
+    <color name="black">#FF000000</color>
+    <color name="lightgrey">#909090</color>
+    <color name="darkgrey">#2F2F2F</color>
+    <color name="charblack">#131313</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

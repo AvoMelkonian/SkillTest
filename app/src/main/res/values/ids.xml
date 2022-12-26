@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="mainContainer" type="id" />
+    <item name="txt_choose" type="id" />
+    <item name="btn_one" type="id" />
+    <item name="btn_three" type="id" />
+    <item name="btn_two" type="id" />
+    <item name="btn_four" type="id" />
+    <item name="guideline4" type="id" />
+    <item name="btn_menu" type="id" />
+</resources>

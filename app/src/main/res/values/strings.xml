@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Skill Test</string>
+    <string name="txt_ask_name">What\'s your name?</string>
+    <string name="hint_name">Your first name</string>
+    <string name="btntxt_signup">Let\'s start!</string>
+    <string name="btntxt_one">PHP</string>
+    <string name="btntxt_two">Java</string>
+    <string name="btntxt_three">Python</string>
+    <string name="btntxt_four">JavaScript</string>
+    <string name="txt_counter">Questions: n of 5</string>
+    <string name="txt_question">Question placeholdererplaceholder?</string>
+    <string name="btntxt_previous">Previous</string>
+    <string name="btntxt_next">Next</string>
+    <string name="btntxt_end">Results</string>
+    <string name="txt_results">Results</string>
+    <string name="btnsubmit_txt">Submit</string>
+    <string name="txt_choose">Please choose a quiz from the following</string>
+    <string name="txt_lightgrey">Light Gray</string>
+    <string name="txt_bronzegold">Bronze Gold</string>
+    <string name="txt_charblack">Charcoal Black</string>
+    <string name="btn_darkblue">Dark Blue</string>
+    <string name="btn_darkgrey">Dark Gray</string>
+    <string name="btn_bronzegold">Bronze Gold</string>
+    <string name="change_background_color">Change Background Color</string>
+    <string name="background_darkblue">Dark Blue</string>
+    <string name="background_lightblue">Light Blue</string>
+    <string name="background_smokeygrey">Smokey Gray</string>
+    <string name="title_header">Settings</string>
+    <string name="title_sound">Enable/Disable Sound</string>
+    <string name="title_background">Background Color</string>
+    <string name="title_button">Button Color</string>
+    <string name="title_text">Text Color</string>
+    <string name="title_activity_settings">Settings</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
